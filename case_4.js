@@ -47,21 +47,13 @@ const cases = [
 ];
 function getAttribute(o, k) {
   const keys = k.split(".");
-
   let value = o;
   for (const key of keys) {
     if (typeof value !== "object" || value === null) {
-      console.log(null);
       return null;
     }
-    if (Array.isArray(value)) {
-      const index = parseInt(key);
-      if (!isNaN(index)) {
-        value = value[index];
-      } else {
-        console.log(null);
-        return null;
-      }
+    if (key < 0) {
+      value = value[value.length + parseFloat(key)];
     } else {
       value = value[key];
     }
