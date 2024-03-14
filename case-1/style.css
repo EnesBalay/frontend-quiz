@@ -1,5 +1,44 @@
 .foreground {
-    width: 100px;
-    height: 100px;
-    background-color: var(--color-background);
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-background);
+  z-index: 3;
+}
+.main {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+}
+.horizontal-top,
+.horizontal-bottom {
+  height: 60px;
+  z-index: 1;
+}
+.horizontal-top {
+  width: 375px;
+  background-color: #19b3f1;
+}
+.horizontal-bottom {
+  background-color: #80cdf6;
+  width: 300px;
+  margin-top: 45px;
+}
+
+.vertical-left,
+.vertical-right {
+  height: 330px;
+  width: 30px;
+  position: absolute;
+  background-color: #357597;
+  z-index: 0;
+}
+
+.vertical-left {
+  right: 97px;
+}
+.vertical-right {
+  left: 97px;
 }

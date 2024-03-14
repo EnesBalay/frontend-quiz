@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>TASK 1</title>
-        <link rel="stylesheet" href="core.css" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <div>
-            <label for="opacity-slider">Prev Opacity</label>
-            <input type="range" min="1" max="100" value="30" id="opacity-slider" />
-            <label for="display-check">Prev Display Toggle</label>
-            <input type="checkbox" id="display-check" checked />
-        </div>
-        <div class="canvas">
-            <div class="background" id="background"></div>
-            <div class="foreground"></div>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 1</title>
+    <link rel="stylesheet" href="core.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <div>
+        <label for="opacity-slider">Prev Opacity</label>
+        <input type="range" min="1" max="100" value="30" id="opacity-slider" />
+        <label for="display-check">Prev Display Toggle</label>
+        <input type="checkbox" id="display-check" checked />
+      </div>
+      <div class="canvas">
+        <div class="background" id="background"></div>
+        <div class="foreground"></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="horizontal-top"></div>
+      <div class="horizontal-bottom"></div>
+      <div class="vertical-left"></div>
+      <div class="vertical-right"></div>
+    </div>
+  </body>
 </html>
